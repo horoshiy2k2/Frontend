@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url(rsms.me/inter/inter.css);
 * {
   padding: 0;
   margin: 0;
@@ -74,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter/static/Inter-Regular.ttf") format("truetype");
+}
 .about {
   width: 1680px;
   height: 1874px;
@@ -84,15 +87,15 @@ h1, h2, h3, h4, h5, h6 {
   top: 30px;
   left: 200px;
   width: 1280px;
-  height: 76px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  border-radius: 10px;
-  background: #FFF;
-  -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
   width: 1280px;
   height: 76px;
+  height: 76px;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .header__logo-icon {
   position: absolute;
@@ -104,20 +107,20 @@ h1, h2, h3, h4, h5, h6 {
       flex-shrink: 0;
 }
 .header__navigation-links {
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
   position: absolute;
   top: 29px;
   left: 274px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 57px;
-  color: #131313;
-  font-family: "Myriad Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: 0.07px;
+  color: #131313;
+  gap: 57px;
 }
 .header__navigation-links .header__nav-link-1,
 .header__navigation-links .header__nav-link-2,
@@ -127,41 +130,41 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 .header__contact-phone-number {
+  font-family: Myriad Pro;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
   position: absolute;
   top: 27px;
   right: 113px;
-  color: #131313;
-  font-family: Myriad Pro;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
   letter-spacing: 0.09px;
   text-transform: uppercase;
+  color: #131313;
 }
 .header__contact-messenger-icon {
+  position: absolute;
+  top: 24px;
+  right: 69px;
   width: 27px;
   height: 27px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  position: absolute;
-  top: 24px;
-  right: 69px;
 }
 .site-section-routes {
-  color: rgba(0, 0, 0, 0.89);
+  font-family: Helvetica Neue;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
   position: absolute;
   top: 156px;
   left: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: rgba(0, 0, 0, 0.89);
   gap: 22px;
-  font-family: Helvetica Neue;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 .site-section-routes__route-section_current {
   color: rgba(0, 0, 0, 0.5);
@@ -172,12 +175,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 1680px;
   height: 196px;
+  background: #2c2c2c;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  background: #2C2C2C;
 }
 .footer__logo-icon {
   position: absolute;
@@ -189,20 +192,20 @@ h1, h2, h3, h4, h5, h6 {
       flex-shrink: 0;
 }
 .footer__navigation-links {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
   position: absolute;
   top: 67px;
   left: 374px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   letter-spacing: 0.07px;
+  color: #fff;
+  gap: 40px;
 }
 .footer__contact-title {
   position: absolute;
@@ -214,6 +217,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 295px;
   height: 60px;
   padding: 20px 33px;
+  border-radius: 10px;
+  background: #f8de67;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -223,59 +228,58 @@ h1, h2, h3, h4, h5, h6 {
   gap: 15px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  border-radius: 10px;
-  background: #F8DE67;
 }
 .footer__contact-phone-number {
-  position: absolute;
-  width: 179px;
-  height: 22px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  top: 42px;
-  right: 200px;
-  color: #FFF;
   font-family: Inter;
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
+  font-style: normal;
   line-height: normal;
+  text-align: right;
+  position: absolute;
+  top: 42px;
+  right: 200px;
+  width: 179px;
+  height: 22px;
   letter-spacing: 0.09px;
   text-transform: uppercase;
+  color: #fff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .footer__contact-mail {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
   position: absolute;
   top: 69px;
   right: 200px;
   width: 131px;
   height: 18px;
+  text-align: right;
+  letter-spacing: 0.075px;
+  color: rgba(255, 255, 255, 0.64);
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.64);
-  text-align: right;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.075px;
 }
 .footer__contact-messengers-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 164px;
   height: 24px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 22px;
 }
 .footer__bottom-line {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 1680px;
   height: 45px;
+  background: #232323;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  background: #232323;
 }
