@@ -4,14 +4,15 @@
 $textColor: #131313;
 $fontFamily: 'Myriad Pro';
 
-@font-face {
+@font-face
+{
     font-family: 'Inter';
-    src: url("../../fonts/Inter/static/Inter-Regular.ttf") format('truetype');
+
+    src: url('../../fonts/Inter/static/Inter-Regular.ttf') format('truetype');
 }
 
 .about
 {
-	
     width: 1680px;
     height: 1874px;
 }
@@ -285,7 +286,6 @@ $fontFamily: 'Myriad Pro';
         font-weight: 600;
         font-style: normal;
         line-height: normal;
-        text-align: right;
 
         position: absolute;
         top: 42px;
@@ -294,6 +294,7 @@ $fontFamily: 'Myriad Pro';
         width: 179px;
         height: 22px;
 
+        text-align: right;
         letter-spacing: .09px;
         text-transform: uppercase;
 
@@ -325,6 +326,10 @@ $fontFamily: 'Myriad Pro';
     }
     &__contact-messengers-icons-container
     {
+        position: absolute;
+        top: 97px;
+        right: 200px;
+
         display: flex;
 
         width: 164px;
@@ -350,11 +355,44 @@ $fontFamily: 'Myriad Pro';
     }
     &__left-text
     {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+
+        position: absolute;
+        bottom: 14px;
+        left: 200px;
+
+        color: #fff;
     }
     &__right-text-1
     {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+
+        position: absolute;
+        bottom: 14px;
+        left: 926px;
+
+        color: #fff;
     }
     &__right-text-2
     {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+
+        position: absolute;
+        right: 200px;
+        bottom: 14px;
+
+        color: #fff;
     }
 }
