@@ -1,0 +1,25 @@
+.main {
+
+    &__body {
+        a {
+            display: block;
+            height: 454px;
+            width: 50%;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background: rgba(0,0,0,0.5);
+            }
+            img {
+                @include ibg;
+            }
+        }
+    }
+}
