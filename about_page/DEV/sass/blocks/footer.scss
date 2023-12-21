@@ -74,9 +74,11 @@
 	&__vk {}
 
 	&__bottom-line {
+
 		background: #232323;
-		padding: 14px 202px 14px 200px;
+		padding: 14px 0;
 		.container {
+
 			display: flex;
 			justify-content: space-between;
 		}
