@@ -1,0 +1,94 @@
+.main {
+    background-image: url("../img/main/block-yellow-bg.png");
+    background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &__body {
+
+    }
+
+    &__block-1 {
+
+    }
+    &__title {
+        font-family: "FiraSans-Bold", Tahoma, Geneva, "sans-serif", sans-serif;
+        font-size: 70px;
+        line-height: 67px;
+        overflow-wrap: break-word;
+        text-size-adjust: 100%;
+        box-sizing: border-box;
+        text-wrap: wrap;
+        padding: auto;
+        margin: auto;
+        text-align: center;
+    }
+    &__adventages {
+
+        display: flex;
+        gap: 30px;
+        padding-top: 79px;
+        justify-content: center;
+    }
+    &__adventage {
+        display: flex;
+        gap: 45px;        
+        font-family: "FiraSans-Medium", Tahoma, Geneva, "sans-serif", sans-serif;
+        font-size: 17px;
+        width: 25%;
+       
+        &_big {
+            gap: 21px;
+            p {
+                padding-top: 15px;
+                width: 70%;
+            }
+            font-size: 23px;
+            word-wrap: break-word;
+
+        } 
+    }
+    &__contact-button-container {
+        width: 153px;
+        margin: auto;
+    }
+    &__contact-button {
+        border-radius: 4px;
+        background-color: rgb(249, 249, 251);
+        padding: 19px 43px;
+        cursor: pointer;
+        line-height: 29px;
+        font-size: 18px;
+        width: 100%;
+        
+        margin-top: 64px;
+        font-family: "FiraSans-Medium", Tahoma, Geneva, "sans-serif", sans-serif;
+    }
+    &__phone {
+        padding-top: 68px;
+        padding-bottom: 153px;
+        font-size: 70px;
+        line-height: 67px;
+        font-family: "FiraSans-Bold", Tahoma, Geneva, "sans-serif", sans-serif;
+        text-align: center;
+    }
+
+    &__block-2 {}
+    &__list-title {}
+    &__contacts {}
+    &__contacts-title {}
+    &__contacts-container {}
+    &__phone-container {}
+    &__contacts-phone {}
+    &__location-container {}
+    &__contacts-location {}
+    &__social-media {}
+    &__sm-title {}
+
+    &__block-3 {}
+    &__about-image {}
+    &__about-company {}
+    &__about-company-title {}
+    &__about-company-text {}
+    &__about-company-contact-button {}
+}
