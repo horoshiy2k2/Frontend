@@ -1,10 +1,126 @@
-.main {
 
+
+.breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 21px;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 15px;
+    a {
+        color: rgba(0, 0, 0, 0.89);
+        
+    }
+    a:last-of-type { 
+        color: rgba(0, 0, 0, 0.50);
+    }
+    p {
+        color: rgba(0, 0, 0, 0.89);
+    }
+    p:last-of-type { 
+        color: rgba(0, 0, 0, 0.50);
+    }
+}
+
+.title {
+    margin: 0;
+    color: #131313;
+    font-family: BlinkMacSystemFont-Bold, sans-serif;
+    font-size: 35px;
+    letter-spacing: 0.175px;
+}
+
+.main {
+    .container {
+        @media screen and (max-width: 1310px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
     &__body {
+        padding: 50px 0 0 0;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__block-1 {
+        display: flex;
+        @media screen and (max-width: 992px) {
+           flex-direction: column;
+        }
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 0 0;
+        width: 52%;
+        @media screen and (max-width: 992px) {
+            width: 100%; 
+
+        }
+    }
+    &__breadcrumbs {}
+    &__title {}
+    &__text {
+        padding-right: 70px;
+        p {
+            color: #393939;
+            font-family: MyriadPro-Regular, sans-serif;
+            font-size: 17px;
+            line-height: 25px;
+            margin: 0 0 27px 0;
+        }
+        p:last-of-type {
+            margin: 0;
+        }
+        @media screen and (max-width: 992px) {
+           padding-right: 0;
+        }
+    }
+    &__adventages {
+        display: flex;
+        gap: 19px;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        @media screen and (max-width: 992px) {
+           justify-content: center;
+           padding-bottom: 30px;
+        }
+    }
+    &__adventage {
+        display: flex;
+        gap: 15px;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+        padding: 24px 28px;
+
+        @media screen and (max-width: 480px) {
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        color: #393939;
+        font-family: MyriadPro-Regular, sans-serif;
+        font-size: 14px;
+    }
+    &__decor {
+        position: absolute;
+        top: 489px;
+        left: 821px;
+        display: none; // change later
+    }
+    &__right {
+        padding-left: 29px;
+        @media screen and (max-width: 992px) {
+           padding-left: 0px;
+        }
         a {
             display: block;
             height: 454px;
-            width: 50%;
             border-radius: 20px;
             overflow: hidden;
             position: relative;
@@ -17,9 +133,16 @@
                 top: 0;
                 background: rgba(0,0,0,0.5);
             }
+            @media screen and (max-width: 480px) {
+                    height: 300px;
+          
+                }
             img {
                 @include ibg;
+                
             }
         }
     }
 }
+
+

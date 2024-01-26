@@ -1,0 +1,225 @@
+.container {
+        @media screen and (max-width: 1310px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+.footer {
+	background: #2C2C2C;
+	&__body {
+		@include flexcntb;
+		margin-top: 82px;
+        padding: 30px 0px 30px 0px;
+
+        @media screen and (max-width: 1130px) {
+            gap: 55px;
+        }
+
+        @media screen and (max-width: 480px) {
+            gap: 5px;
+        }
+
+
+        
+	}
+	&__left {
+		@include flexcntb;
+		gap: 87px;
+		@media screen and (max-width: 992px) {
+	    	gap: 15px;
+        }
+
+        @media screen and (max-width: 350px) {
+            gap: 5px;
+        }
+	}
+	&__logo {
+		@media screen and (max-width: 350px) {
+            img {
+            	width: 68px;
+            	height: 73px;
+            }
+        }
+	}
+	&__nav {
+		@media screen and (max-width: 992px) {
+	    	display: none;
+        }
+		ul {
+            @include flexcnt;
+            column-gap: 40px;
+            li {
+                list-style: none;
+                a {
+                	color: #FFF;
+                    font-size: 14px;
+                    letter-spacing: 0.07px;
+                    font-family: 'Inter-Regular', sans-serif;
+                }
+            }
+        }
+	}
+
+	&__right {
+		@include flexcntb;
+		gap: 55px;
+		@media screen and (max-width: 1130px) {
+
+		}
+	}
+
+	&__quality-department{
+		padding: 20px 33px;
+		border-radius: 10px;
+		background: #F8DE67;
+		a {
+			@include flexcnt;
+			gap: 15px;
+			font-size: 16px;
+			font-family: 'MyriadPro-Semibold', sans-serif;
+		}
+
+		@media screen and (max-width: 1130px) {
+            padding: 15px 23px;
+            a {
+            	font-size: 14px;
+            	gap: 10px;
+            	text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            display: none;
+        }
+	}
+
+	&__qd-arrow {}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 5px;
+		text-align: right;
+	}
+	&__phone {
+		color: #FFFFFF;
+		font-family: 'Inter-SemiBold', sans-serif;
+		letter-spacing: 0.09px;
+		font-size: 18px;
+
+		@media screen and (max-width: 1130px) {
+	    	font-size: 16px;
+        }
+	}
+	&__mail {
+		color: rgba(255, 255, 255, 0.64);
+		font-family: 'Inter-Regular', sans-serif;
+		letter-spacing: 0.075px;
+		font-size: 15px;
+	}
+
+	&__social-networks {
+		display: flex;
+		justify-content: space-between;
+		gap: 21px;
+		padding: 5px 0px 0px 0px;
+	}
+	&__telegram {}
+	&__whatsapp {}
+	&__instagram {}
+	&__vk {}
+
+	&__bottom-line {
+
+		background: #232323;
+		padding: 14px 0;
+		.container {
+			display: flex;
+			justify-content: space-between;
+			@media screen and (max-width: 992px) {
+		    	flex-direction: column;
+		    	gap:15px;
+		    	align-items: center;
+		    	text-align: center;
+        	}
+		}
+	}
+
+	&__left-text {	
+		p {
+			color: #FFF;
+			font-family: 'Inter-Regular', sans-serif;
+			font-size: 14px;
+		}
+	}
+	
+	&__documents {
+		display: flex;
+		gap: 40px;
+		a {
+			color: #FFF;
+			font-family: 'Inter-Regular', sans-serif;
+			font-size: 14px;
+		}
+
+		@media screen and (max-width: 992px) {
+	    	flex-direction: column;
+	    	gap:15px;
+	    	align-items: center;
+	    	text-align: center;
+    	}
+	}
+
+	.burger-content {
+	    &__body {
+	        a {
+	            color: white;
+	            font-size: 20px;
+	        }
+
+	        ul {
+	            display: flex;
+	            flex-direction: column;
+	            gap: 15px;
+	            list-style: none;
+	        }
+	    }
+	    &__phone-block {
+	        padding-top: 15px;
+	    }
+	    &__phone {
+	    }
+	}
+
+	.burger {
+		i{
+			background: #fff;
+			&::before{
+				background: #fff;
+			}
+			&::after{
+				background: #fff;
+			}
+		}
+
+		&.active{
+		i{
+			background: transparent;
+			&::before{
+				top:0;
+				transform: rotateZ(45deg);
+				background: var(--burger-color-active);
+			}
+			&::after{
+				bottom:0;
+				transform: rotateZ(-45deg);
+				background: var(--burger-color-active);
+			}
+		}
+	}
+	    
+	}
+}
+

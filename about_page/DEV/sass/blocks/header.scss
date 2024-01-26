@@ -1,15 +1,38 @@
 .header {
     padding-top: 30px;
+
+    .container {
+        @media screen and (max-width: 1310px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
     &__body {
         @include flexcntb;
         border-radius: 10px;
         background: #FFF;
         box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
         padding: 8px 69px 9px 75px;
+
+        
+        @media screen and (max-width: 1310px) {
+            padding: 8px 35px 9px 37px;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 
     &__logo {
         @include flexcnt;
+        @media screen and (max-width: 350px) {
+            img {
+                max-width: 40px;
+            }
+        }
     }
 
     &__nav {
@@ -24,20 +47,56 @@
                 }
             }
         }
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
     }
 
     &__right {
         @include flexcnt;
         column-gap: 17px;
+        @media screen and (max-width: 992px) {
+            column-gap: 0px;
+        }
     }
 
     &__phone {
         font-family: 'MyriadPro-Semibold', sans-serif;
         font-size: 18px;
         letter-spacing: 0.09px;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
     }
 
     &__whatsapp {
         @include flexcnt;
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.burger-content {
+    &__body {
+        a {
+            color: white;
+            font-size: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            list-style: none;
+        }
+    }
+    &__phone-block {
+        padding-top: 15px;
+    }
+    &__phone {
     }
 }
