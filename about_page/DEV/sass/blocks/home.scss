@@ -1,3 +1,5 @@
+
+
 .breadcrumbs {
     display: flex;
     justify-content: flex-start;
@@ -28,6 +30,12 @@
 }
 
 .main {
+    .container {
+        @media screen and (max-width: 1310px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
     &__body {
         padding: 50px 0 0 0;
     }
@@ -38,12 +46,19 @@
     }
     &__block-1 {
         display: flex;
+        @media screen and (max-width: 992px) {
+           flex-direction: column;
+        }
     }
     &__left {
         display: flex;
         flex-direction: column;
         padding: 30px 0 0 0;
         width: 52%;
+        @media screen and (max-width: 992px) {
+            width: 100%; 
+
+        }
     }
     &__breadcrumbs {}
     &__title {}
@@ -59,11 +74,19 @@
         p:last-of-type {
             margin: 0;
         }
+        @media screen and (max-width: 992px) {
+           padding-right: 0;
+        }
     }
     &__adventages {
         display: flex;
         gap: 19px;
         padding-top: 30px;
+        flex-wrap: wrap;
+        @media screen and (max-width: 992px) {
+           justify-content: center;
+           padding-bottom: 30px;
+        }
     }
     &__adventage {
         display: flex;
@@ -72,6 +95,13 @@
         background: #FFF;
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
         padding: 24px 28px;
+
+        @media screen and (max-width: 480px) {
+            padding-right: 0;
+            padding-left: 0;
+            width: 100%;
+            justify-content: center;
+        }
         
         color: #393939;
         font-family: MyriadPro-Regular, sans-serif;
@@ -85,6 +115,9 @@
     }
     &__right {
         padding-left: 29px;
+        @media screen and (max-width: 992px) {
+           padding-left: 0px;
+        }
         a {
             display: block;
             height: 454px;
@@ -100,8 +133,13 @@
                 top: 0;
                 background: rgba(0,0,0,0.5);
             }
+            @media screen and (max-width: 480px) {
+                    height: 300px;
+          
+                }
             img {
                 @include ibg;
+                
             }
         }
     }
